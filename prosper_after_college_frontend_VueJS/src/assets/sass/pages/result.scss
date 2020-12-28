@@ -1,0 +1,287 @@
+.result {
+    &__wrapper {
+        padding-top: 93px;
+        padding-bottom: 185px;
+    }
+
+    &__block {
+        margin-top: 45px;
+        padding: 94px 102px;
+        padding-bottom: 257px;
+        background: url('../img/text-bg.png') no-repeat;
+        background-size: cover;
+
+        &-salary {
+            padding-left: 73px;
+            background-color: #ffffff;
+            padding-right: 72px;
+            padding-top: 55px;
+            padding-bottom: 41px;
+            margin-bottom: 18px;
+
+            &.school {
+                .result__block-content {
+                    padding-right: 166px;
+
+                    .content-price {
+                        span {
+                            // color: #515770;
+
+                            // &:last-child {
+                            //     color: #ca5451;
+                            // }
+                        }
+                    }
+                }
+
+                .result__block-total {
+                    span {
+                        margin-left: 30px;
+                        // color: #ca5451;
+
+                        &:last-child {
+                            // color: #515770;
+                            margin-left: wsm(300);
+                        }
+                    }
+                }
+
+            }
+
+            &.expenses {
+                padding-bottom: 50px;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 103px;
+                    height: 1px;
+                    width: 85.5%;
+                    background-color: #02a4f7;
+
+                }
+
+                .block-expenses {
+                    display: flex;
+                    padding-top: 13px;
+                }
+
+                .property-expenses {
+                    padding-right: 54px;
+                    display: flex;
+                    flex-grow: 2;
+                    justify-content: center;
+                }
+
+                .name-expenses {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+
+                    span {
+                        line-height: 34px;
+
+                        &:last-child {
+                            margin-top: 43px;
+                        }
+                    }
+                }
+
+                .price-expenses {
+                    margin-left: 30px;
+                    display: flex;
+                    flex-direction: column;
+
+                    span {
+                        // color: #ca5451;
+                        line-height: 34px;
+                        font-family: 'Avenir Next Cyrbold';
+
+                        &:last-child {
+                            margin-top: 43px;
+                        }
+                    }
+                }
+
+              
+            }
+        }
+        .total-expenses {
+            right: 0;
+            align-items: flex-end;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            span {
+                color: #515770;
+                line-height: 34px;
+                font-family: 'Avenir Next Cyrbold';
+
+                &.negative {
+                    color: #ca5451;
+                }
+                &.valid {
+                    color: #52ac62;
+                }
+
+                // &:last-child {
+                //     margin-top: 43px;
+                // }
+            }
+        }
+        &-title {
+            display: flex;
+            justify-content: space-between;
+
+            .mobile {
+                display: none;
+            }
+
+            h5 {
+                color: #01a0f0;
+                font-family: 'Avenir Next Cyrbold';
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 30px;
+            }
+
+            span {
+                font-family: 'Avenir Next Cyrbold';
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 30px;
+            }
+        }
+
+        &-content {
+            position: relative;
+            margin-top: 12px;
+            // padding-right: 66px;
+            padding-bottom: 27px;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid #02a4f7;
+
+            .content-name {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                span {
+                    line-height: 34px;
+                    
+                }
+            }
+
+            .content-price {
+                width: 50%;
+                margin-left: 30px;
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    font-family: 'Avenir Next Cyrbold';
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 34px;
+                    &.negative {
+                        color: #ca5451;
+                    }
+                    &.valid {
+                        color: #52ac62;
+                    }
+                }
+            }
+        }
+
+        &-total {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin-top: 26px;
+            .result__block-group {
+                width: 100%;
+                display: flex;
+            }
+            span {
+                margin-left: 30px;
+                // color: #52ac62;
+                font-family: 'Avenir Next Cyrbold';
+                &.negative {
+                    color: #ca5451;
+                }
+                &.valid {
+                    color: #52ac62;
+                }
+            }
+            p {
+                text-align: right;
+                width: 48%;
+            }
+            .total {
+                position: absolute;
+                right: 0;
+            }
+        }
+
+        &-summary {
+            padding-top: 40px;
+            padding-bottom: 44px;
+            background-color: #fff;
+            align-items: center;
+            flex-direction: column;
+            display: flex;
+
+            span {
+                font-size: 18px;
+                line-height: 34px;
+                font-family: 'Avenir Next Cyrbold';
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 30px;
+
+                &:last-child {
+                    font-size: 16px;
+                    text-align: center;
+                    line-height: 27px;
+
+                    span {
+                        // color: #52ac62;
+                    }
+                }
+
+
+            }
+
+            h5 {
+                width: 85%;
+                margin-top: 23px;
+                padding-top: 32px;
+                margin-bottom: 17px !important;
+                text-align: center;
+                border-top: #02a4f7 1px solid;
+                color: #01a0f0;
+                font-family: 'Avenir Next Cyrbold';
+                font-size: 18px;
+            }
+
+            .negative {
+                color: #ca5451;
+            }
+            .valid {
+                color: #52ac62;
+            }
+        }
+    }
+
+    .result-mobile-text {
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 30px;
+        text-align: center;
+    }
+}

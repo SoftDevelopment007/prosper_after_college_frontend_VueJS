@@ -1,0 +1,46 @@
+@media #{$lg} {
+    .default-container {
+        width: 100%;
+    }
+}
+
+@media #{$md} {
+    body {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+    .error-message {
+        bottom: -20px;
+    }
+    .default-title {
+        font-size: 27px;
+    }
+
+    .select-arrow {
+        height: 40px;
+
+        &::after {
+            background-position: center 9px;
+            right: 8px;
+            width: 26px;
+            height: 26px;
+        }
+    }
+
+    .custom-select {
+        padding-left: 20px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .form-group {
+        input {
+            height: 40px;
+            font-size: 14px;
+            padding-left: 17px;
+        }
+    }
+}

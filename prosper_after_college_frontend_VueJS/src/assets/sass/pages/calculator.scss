@@ -1,0 +1,231 @@
+.calculator {
+    padding-bottom: 185px;
+    label {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        margin: 0;
+    }
+
+    &__wrapper {
+        &_mobile {
+            display: none;
+        }
+
+        padding-top: 93px;
+
+        h1 {
+            text-align: center;
+        }
+
+        .top-text {
+            line-height: 30px;
+            margin-top: 30px;
+            text-align: center;
+        }
+    }
+
+    &__form {
+
+        &-top {
+            padding-top: 39px;
+            display: flex;
+            justify-content: center;
+
+            .select-left {
+                margin-right: 30px;
+                width: 378px;
+            }
+
+            .select-right {
+                width: 585px;
+            }
+        }
+
+        &-personality {
+            margin-top: 48px;
+            margin-bottom: 46px;
+            padding: 52px 127px;
+            padding-bottom: 70px;
+            background: url('../img/text-bg.png') no-repeat;
+            background-size: cover;
+            .school {
+                .default-button {
+                    box-shadow: none;
+                }
+                .loader {
+                    &__background {
+                       opacity: 0;
+                    }
+                }
+            }
+            .level {
+                display: flex;
+                justify-content: space-between;
+
+                .default-name {
+                    padding-top: 10px;
+                }
+            }
+
+            .select-level {
+                width: 560px;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background-color: #000;
+                    width: 10px;
+                    height: 10px;
+
+                }
+            }
+
+            .salary {
+                display: flex;
+                margin-top: 42px;
+
+                .default-name {
+                    padding-top: 10px;
+                }
+
+                input {
+                    margin-right: 13px;
+                    margin-left: 30px;
+                    width: 234px;
+                }
+
+                label {
+                    margin: 0;
+                    padding-top: 9px;
+                }
+            }
+
+            .univer {
+                margin-top: 38px;
+            }
+
+            .school {
+                margin-top: 15px;
+                display: flex;
+                justify-content: space-between;
+
+                .search-form {
+                    .v-select {
+                        // margin-left: 46px;
+                        width: 428px;
+                    }
+                }
+
+                .total-form {
+                    margin-left: 38px;
+                    .v-select {
+                        //
+                        width: 220px;
+                    }
+                }
+
+                &.second-school {
+                    margin-top: 50px;
+
+                    .search-form {
+                        .v-select {
+                            margin-left: 0;
+                        }
+                    }
+                }
+
+            }
+
+            .total {
+                margin-top: 15px;
+
+                p {
+                    font-family: 'Avenir Next Cyrbold';
+                    font-size: 15px;
+                    color: #ffffff;
+                    font-weight: 700;
+                    line-height: 32px;
+                    text-transform: uppercase;
+                }
+            }
+
+            .amount {
+                margin-top: 46px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                input {
+                    width: 262px;
+                }
+            }
+        }
+
+        &-result {
+            margin-top: 32px;
+            // padding: 52px 127px;
+            padding-top: 66px;
+            padding-left: 129px;
+            padding-bottom: 31px;
+            background: url('../img/text-bg.png') no-repeat;
+            background-size: cover;
+
+            .default-name {
+                margin-bottom: 22px;
+            }
+
+            .range {
+                display: flex;
+                margin-bottom: 28px;
+
+                .default-name {
+                    margin-bottom: 0;
+                }
+            }
+
+            .item-group {
+                display: flex;
+                margin-bottom: 29px;
+
+                .select-arrow {
+                    width: 428px;
+                    margin-right: 57px;
+                }
+
+                .form-cost {
+                    display: flex;
+                    align-items: center;
+
+                    input {
+                        width: 205px;
+                        margin-left: 16px;
+                    }
+                }
+
+                .show-modal {
+                    width: 78px;
+                    margin-left: 15px;
+                }
+            }
+        }
+
+        .calculator-submit {
+            z-index: 2;
+            position: relative;
+            left: 68%;
+            top: 51px;
+            width: 252px;
+            height: 60px;
+            border-radius: 30px;
+
+            span {
+                text-shadow: 0 1px 2px #90231d;
+                color: #ffffff;
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }
+    }
+}

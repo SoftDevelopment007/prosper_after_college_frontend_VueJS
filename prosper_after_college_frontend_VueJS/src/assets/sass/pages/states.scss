@@ -1,0 +1,12 @@
+.states {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  &__link {
+    width: 33.3%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #01a0f0;
+  }
+}

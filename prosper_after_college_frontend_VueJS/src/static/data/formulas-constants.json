@@ -1,0 +1,394 @@
+{
+  "gap": 0.75,
+  "StudentLoanInterestRate": 0.06,
+  "InvestmentRateOfReturn": 0.1,
+  "InvestmentNumberOfYears": 15,
+  "MonthlySavingsPercent": 0.15,
+  "MonthlySavingsPercentPlenty": 0.15,
+  "MonthlySavingsPercentModerate": 0.1,
+  "MonthlySavingsPercentPoor": 0,
+  "SocialSecurityTax": 0.062,
+  "MedicareTax": 0.0145,
+  "StateTax": 0.05,
+  "PersonalExemption": 12200,
+  "Brackets": {
+    "Tax": [0.1, 0.12, 0.22, 0.24],
+    "SalaryFrom": [0, 9701, 39476, 84201],
+    "SalaryTo": [9700, 39475, 84200, 160725]
+  },
+  "CostOfLife": {
+    "Plenty": {
+      "Rent": { "cost": 1163, "showInResults": true, "description": "Rent 1 bedroom apartment"},
+      "Clothes": { "cost": 150, "showInResults": false, "description": "Clothes and shoes"},
+      "Food": { "cost": 450, "showInResults": true, "description": "Eat out frequently", "sumDescription": "Food"},
+      "Utilities": { "cost": 167, "showInResults": false, "description": "Utilities"},
+      "Phone": { "cost": 80, "showInResults": false, "description": "Mobile phone"},
+      "Internet": { "cost": 50, "showInResults": false, "description": "Internet"},
+      "Car Lease": { "cost": 200, "showInResults": true, "description": "Buy a small car"},
+      "Car Insurance": { "cost": 100, "showInResults": false, "description": "Car insurance"},
+      "Gas": { "cost": 120, "showInResults": false, "description": "Gas for your car"},
+      "Health Insurance": { "cost": 200, "showInResults": false, "description": "Health insurance"},
+      "Entertainment": { "cost": 300, "showInResults": true, "description": "Go out a lot", "sumDescription": "Going out"},
+      "Transportation": { "cost": 0, "showInResults": false},
+      "Travel": { "cost": 200, "showInResults": true, "description": "Go to a remote vacation for 1 or 2 weeks", "sumDescription": "Saving for vacations"}
+    },
+    "Moderate": {
+      "Rent": { "cost": 600, "showInResults": true, "description": "Rent a room"},
+      "Clothes": { "cost": 100, "showInResults": false, "description": "Clothes and shoes"},
+      "Food": { "cost": 450, "showInResults": true, "description": "Cook and eat out once in a while", "sumDescription": "Food"},
+      "Utilities":{ "cost":  167, "showInResults": false, "description": "Utilities"},
+      "Phone": { "cost": 80, "showInResults": false, "description": "Mobile phone"},
+      "Internet": { "cost": 20, "showInResults": false, "description": "Internet"},
+      "CarLease": { "cost": 0, "showInResults": false},
+      "CarInsurance": { "cost": 0, "showInResults": false},
+      "HealthInsurance": { "cost": 200, "showInResults": false, "description": "Health insurance"},
+      "Entertainment": { "cost": 200, "showInResults": true, "description": "Go out once a week", "sumDescription":"Going out"},
+      "Transportation": { "cost": 80, "showInResults": true, "description": "Use public transport", "sumDescription": "Public transport"},
+      "Travel": { "cost": 100, "showInResults": true, "description": "Fly to visit friends or family", "sumDescription": "Saving for vacations"}
+    },
+    "Poor": {
+      "Rent": { "cost": 0, "showInResults": true, "description": "Live with parents"},
+      "Clothes": { "cost": 50, "showInResults": false, "description": "Clothes and shoes"},
+      "Food": { "cost": 450, "showInResults": true, "description": "Eat at home", "sumDescription":"Food"},
+      "Utilities": { "cost": 167, "showInResults": false},
+      "Phone": { "cost": 80, "showInResults": false, "description": "Mobile phone"},
+      "Internet": { "cost": 0, "showInResults": false},
+      "CarLease": { "cost": 0, "showInResults": false},
+      "CarInsurance": { "cost": 0, "showInResults": false},
+      "HealthInsurance": { "cost": 100, "showInResults": false, "description": "Health insurance"},
+      "Entertainment": { "cost": 100, "showInResults": true, "description": "Low key partying", "sumDescription":"Going out"},
+      "Transportation": { "cost": 50, "showInResults": true, "description": "Use public transport", "sumDescription":"Public transport"},
+      "Travel": { "cost": 0, "showInResults": true, "description": "Travel locally"}
+    }
+  },
+  "CostOfLifeMobile": {
+    "Plenty": {
+      "Rent": { "cost": 1163, "showInResults": true, "description": "Rent 1b"},
+      "Car Lease": { "cost": 200, "showInResults": true, "description": "Own car"},
+      "Transportation": { "cost": 0, "showInResults": false},
+      "Aside": {"cost": 497, "showInResults": true, "description": "Set aside 15%"}
+    },
+    "Moderate": {
+      "Rent": { "cost": 600, "showInResults": true, "description": "Rent room"},
+      "CarLease": { "cost": 0, "showInResults": false},
+      "Transportation": { "cost": 80, "showInResults": true, "description": "Public transit", "sumDescription": "Public transport"},
+      "Aside": {"cost": 331.5, "showInResults": true, "description": "Set aside 10%"}
+    },
+    "Poor": {
+      "Rent": { "cost": 0, "showInResults": true, "description": "With parents"},
+      "CarLease": { "cost": 0, "showInResults": false},
+      "Transportation": { "cost": 50, "showInResults": true, "description": "Public transit", "sumDescription":"Public transport"},
+      "Aside": {"cost": 0, "showInResults": true, "description": "Set aside 10%"}
+    }
+  },
+  "WhereDoYouWantToLive": [
+    {
+      "label": "Rent an apartment",
+      "code": 1163
+    },
+    {
+      "label": "Rent a room",
+      "code": 600
+    },
+    {
+      "label": "With parents",
+      "code": 0
+    }
+  ],
+  "HowMuchWillYouBePayingForUtilities": [
+    {
+      "label": "Rental",
+      "code": 167
+    },
+    {
+      "label": "Room",
+      "code": 100
+    }
+  ],
+  "Transportation": [
+    {
+      "label": "Car Lease & Insurance",
+      "code": 300
+    },
+    {
+      "label": "Public transport",
+      "code": 80
+    },
+    {
+      "label": "Limited local travel",
+      "code": 50
+    }
+  ],
+  "HowMuchDoYouWantToSpendOnFood": [
+    {
+      "label": "Eat out or cook healthy",
+      "code": 450
+    },
+    {
+      "label": "Cook and occasionally eat out",
+      "code": 350
+    },
+    {
+      "label": "Parent’s kitchen and comfort drinks",
+      "code": 200
+    }
+  ],
+  "HowMuchDoYouWantToTravel": [
+    {
+      "label": "Fly to a remote destination for 1 or 2 weeks",
+      "code": 200
+    },
+    {
+      "label": "Fly to visit friends and family",
+      "code": 100
+    },
+    {
+      "label": "Stay local",
+      "code": 0
+    }
+  ],
+  "DoYouWantToGoOut": [
+    {
+      "label": "I like to party a lot",
+      "code": 400
+    },
+    {
+      "label": "I party once in a while",
+      "code": 200
+    },
+    {
+      "label": "I don’t spend much on parties",
+      "code": 0
+    }
+  ],
+  "YouShouldStartSavingForRetirement": [
+    {
+      "label": "I want to invest 15% of my salary",
+      "code": 0.15
+    },
+    {
+      "label": "I want to invest 10% of my salary",
+      "code": 0.1
+    },
+    {
+      "label": "I will not invest now",
+      "code": 0
+    }
+  ],
+  "ResultsTextLifestyle": [
+    "Rent a one bedroom apartment",
+    "Own a small new car",
+    "Put aside 15% of salary into investing",
+    "Travel abroad and have fun"
+  ],
+  "NationalAverages": {
+    "AL": {
+      "rent": 0.700777777777778,
+      "overall": 0.890222222222222
+    },
+    "AK": {
+      "rent": 1.36333333333333,
+      "overall": 1.275
+    },
+    "AZ": {
+      "rent": 1.00385714285714,
+      "overall": 0.999428571428572
+    },
+    "AR": {
+      "rent": 0.7522,
+      "overall": 0.869
+    },
+    "CA": {
+      "rent": 1.97588888888889,
+      "overall": 1.39811111111111
+    },
+    "CO": {
+      "rent": 1.1476,
+      "overall": 1.0348
+    },
+    "CT": {
+      "rent": 1.39666666666667,
+      "overall": 1.25166666666667
+    },
+    "DE": {
+      "rent": 0.976666666666667,
+      "overall": 1.07566666666667
+    },
+    "DC": {
+      "rent": 2.788,
+      "overall": 1.64
+    },
+    "FL": {
+      "rent": 0.959,
+      "overall": 0.983636363636364
+    },
+    "GA": {
+      "rent": 0.735,
+      "overall": 0.900714285714286
+    },
+    "HI": {
+      "rent": 3.471,
+      "overall": 2.013
+    },
+    "ID": {
+      "rent": 0.905,
+      "overall": 0.9475
+    },
+    "IL": {
+      "rent": 0.856375,
+      "overall": 0.953
+    },
+    "IN": {
+      "rent": 0.752,
+      "overall": 0.907
+    },
+    "IA": {
+      "rent": 0.798333333333333,
+      "overall": 0.924333333333333
+    },
+    "KS": {
+      "rent": 0.712714285714286,
+      "overall": 0.873857142857143
+    },
+    "KY": {
+      "rent": 0.8185,
+      "overall": 0.93
+    },
+    "LA": {
+      "rent": 0.854454545454545,
+      "overall": 0.928818181818182
+    },
+    "ME": {
+      "rent": 1.318,
+      "overall": 1.173
+    },
+    "MD": {
+      "rent": 1.791,
+      "overall": 1.2945
+    },
+    "MA": {
+      "rent": 1.673,
+      "overall": 1.303
+    },
+    "MI": {
+      "rent": 0.754,
+      "overall": 0.8965
+    },
+    "MN": {
+      "rent": 0.875,
+      "overall": 1.006
+    },
+    "MS": {
+      "rent": 0.670666666666667,
+      "overall": 0.844666666666667
+    },
+    "MO": {
+      "rent": 0.706166666666667,
+      "overall": 0.891
+    },
+    "MT": {
+      "rent": 1.261,
+      "overall": 1.078
+    },
+    "NE": {
+      "rent": 0.833,
+      "overall": 0.917
+    },
+    "NV": {
+      "rent": 1.158,
+      "overall": 1.028
+    },
+    "NH": {
+      "rent": 1.054,
+      "overall": 1.073
+    },
+    "NJ": {
+      "rent": 1.623,
+      "overall": 1.24425
+    },
+    "NM": {
+      "rent": 0.7775,
+      "overall": 0.887
+    },
+    "NY": {
+      "rent": 1.964625,
+      "overall": 1.349625
+    },
+    "NC": {
+      "rent": 0.826555555555555,
+      "overall": 0.948444444444444
+    },
+    "ND": {
+      "rent": 0.904666666666667,
+      "overall": 0.966333333333333
+    },
+    "OH": {
+      "rent": 0.770142857142857,
+      "overall": 0.927571428571428
+    },
+    "OK": {
+      "rent": 0.6997,
+      "overall": 0.861
+    },
+    "OR": {
+      "rent": 1.859,
+      "overall": 1.37
+    },
+    "PA": {
+      "rent": 0.986166666666667,
+      "overall": 1.00783333333333
+    },
+    "RI": {
+      "rent": 1.316,
+      "overall": 1.185
+    },
+    "SC": {
+      "rent": 0.824833333333333,
+      "overall": 0.950666666666667
+    },
+    "SD": {
+      "rent": 0.9785,
+      "overall": 0.965
+    },
+    "TN": {
+      "rent": 0.775857142857143,
+      "overall": 0.876714285714286
+    },
+    "TX": {
+      "rent": 0.85251724137931,
+      "overall": 0.919965517241379
+    },
+    "UT": {
+      "rent": 0.921,
+      "overall": 0.9622
+    },
+    "VT": {
+      "rent": 1.336,
+      "overall": 1.155
+    },
+    "VA": {
+      "rent": 1.12116666666667,
+      "overall": 1.01716666666667
+    },
+    "WA": {
+      "rent": 1.19766666666667,
+      "overall": 1.11
+    },
+    "WV": {
+      "rent": 0.844,
+      "overall": 0.914
+    },
+    "WI": {
+      "rent": 0.885,
+      "overall": 0.959
+    },
+    "WY": {
+      "rent": 1.021,
+      "overall": 1.02
+    },
+    "PR": {
+      "rent": 0.834,
+      "overall": 0.984
+    }
+  }
+}

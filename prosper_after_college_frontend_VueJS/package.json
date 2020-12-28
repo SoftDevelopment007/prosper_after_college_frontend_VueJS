@@ -1,0 +1,52 @@
+{
+  "name": "collage-planner-nuxt",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "its <itspace.alpha@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "node --max-old-space-size=8096 node_modules/nuxt/bin/nuxt.js build",
+    "start": "node --max-old-space-size=8096 node_modules/nuxt/bin/nuxt.js start",
+    "generate": "node --max-old-space-size=8096 node_modules/nuxt/bin/nuxt.js generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "lint-fix": "eslint --fix .js,.vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@nuxtjs/recaptcha": "^0.6.2",
+    "@nuxtjs/sitemap": "^2.2.1",
+    "axios": "^0.19.0",
+    "axios-rest-client": "^0.1.11",
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.3",
+    "cross-env": "^7.0.2",
+    "inputmask": "^4.0.9",
+    "js-cookie": "^2.2.1",
+    "lodash": "^4.17.15",
+    "nuxt": "^2.12.2",
+    "nuxt-payload-extractor": "git+https://github.com/frakevich/nuxt-payload-extractor.git",
+    "vee-validate": "2.2.6",
+    "vue": "^2.6.11",
+    "vue-analytics": "^5.22.1",
+    "vue-gtag": "^1.10.0",
+    "vue-meta": "^2.3.3",
+    "vue-select": "^3.3.0",
+    "vue-slider-component": "^3.0.41",
+    "vuex-persistedstate": "^2.7.0"
+  },
+  "devDependencies": {
+    "@bchteam/sentry-nuxt": "^2.3.0",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/google-analytics": "^2.4.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^4.19.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "file-loader": "^4.2.0",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.0",
+    "url-loader": "^2.2.0"
+  }
+}

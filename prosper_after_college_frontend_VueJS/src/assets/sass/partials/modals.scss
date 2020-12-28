@@ -1,0 +1,205 @@
+.modal-title {
+    margin-bottom: 33px !important;
+    text-align: center;
+    color: #515770;
+    font-family: 'Avenir Next Cyrbold';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px 
+}
+
+.modal-close {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: -25px;
+    top: -25px;
+    background-image: linear-gradient(to right, #9c271f 0%, #ed7778 100%);
+    box-shadow: 0 5px 18px rgba(207, 49, 36, 0.84);
+    border-radius: 50%;
+    padding: 0;
+    img {
+        width: 20px;
+        height: 20px;
+    }
+}
+.modal-backdrop {
+    min-height: 100vh;
+    height: 100% !important;
+}
+.modal__success-text {
+    text-align: center;
+    img {
+        margin-bottom: 20px;
+    }
+}
+.transport {
+    
+    .modal-dialog {
+        width: 586px;
+        max-width: 586px;
+    }
+
+    .transport-content {
+        border-radius: 0;
+        padding: 55px 70px 64px 70px;
+        background-color: #f1f1f1;
+        .modal-body {
+            flex: 0;
+            padding: 0;
+            margin-bottom: 35px;
+    
+            .form-group {
+                margin-bottom: 17px !important;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+    
+                label {
+                    color: #515770;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+    
+                input {
+                    width: 205px;
+                }
+            }
+        }
+    }
+    &_contact {
+        .transport-content {
+            .modal-body {
+                .form-group {
+                    input, textarea, .v-select {
+                        width: 305px;
+                    }
+                    textarea {
+                        height: 100px;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .modal-footer {
+        padding: 0;
+        border: none;
+        justify-content: center;
+
+        button {
+            height: 50px;
+            border-radius: 25px;
+
+            span {
+                text-shadow: 0 1px 2px #0177b2;
+                color: #ffffff;
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+
+        .default-submit {
+            width: 159px;
+        }
+
+        .cancel {
+            width: 169px;
+            background-color: #016fa6;
+        }
+    }
+}
+
+.food {
+    .modal-dialog {
+        width: 483px;
+        max-width: 483px;
+        height: 576px;
+    }
+
+    .food-content {
+        border-radius: 0;
+        padding: 54px 70px 64px 71px;
+        background-color: #f1f1f1;
+
+        .modal-title {
+            text-align: left;
+        }
+        .modal-body {
+            flex: 0;
+            padding: 0;
+            margin-bottom: 24px;
+    
+            .form-group {
+                margin-bottom: 17px !important;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+    
+                label {
+                    color: #515770;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+    
+                input {
+                    width: 205px;
+                }
+    
+            }
+            h5 {
+                margin-top: 33px;
+                padding-left: 2px;
+                font-size: 16px;
+                font-family: 'Avenir Next Cyrbold';
+                line-height: 30px;
+            }
+    
+            .food-drink {
+                margin-top: 10px;
+                display: flex;
+                justify-content: space-between;
+    
+                .form-group {
+                    width: 160px;
+    
+                    input {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .modal-content {
+        border-radius: 0;
+        border: none;
+    }
+   
+    .modal-footer {
+        padding: 0;
+        border: none;
+        justify-content: center;
+
+        button {
+            height: 50px;
+            border-radius: 25px;
+
+            span {
+                text-shadow: 0 1px 2px #0177b2;
+                color: #ffffff;
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+
+        .default-submit {
+            width: 159px;
+        }
+
+        .cancel {
+            width: 169px;
+            background-color: #016fa6;
+        }
+    }
+}

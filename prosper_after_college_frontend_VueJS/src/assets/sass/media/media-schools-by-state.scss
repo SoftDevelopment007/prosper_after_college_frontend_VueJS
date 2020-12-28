@@ -1,0 +1,18 @@
+@media #{$md} {
+  .schools-by-state {
+    .advisor__content-result {
+      height: auto;
+      width: 100%;
+      margin-bottom: 20px;
+      .result-name {
+        padding: 0 20px;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      a {
+        order: 3;
+      }
+    }
+  }
+}

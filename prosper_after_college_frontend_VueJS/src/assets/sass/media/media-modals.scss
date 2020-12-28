@@ -1,0 +1,165 @@
+@media #{$md} {
+    .modal-title {
+        font-size: 22px;
+        margin-bottom: 16px !important;
+    }
+    .modal-close {
+        width: 40px;
+        height: 40px;
+        right: -20px;
+        top: -20px;
+
+        img {
+            width: 15px;
+            height: 15px;
+        }
+
+    }
+    .modal__success-text {
+        p {
+            margin-bottom: 20px !important;
+        }
+    }
+    .food {
+        .food-dialog {
+            width: 91%;
+            justify-content: center;
+            margin: 0 auto;
+
+        }
+
+        .food-content {
+            padding: 20px 15px 5px 23px;
+
+            .modal-title {
+                text-align: center;
+
+            }
+        }
+        .food-content {
+            .modal-body {
+                margin-bottom: 18px;
+    
+                h5 {
+                    text-align: center;
+                    font-size: 14px;
+                    margin-top: 36px;
+                }
+    
+                .form-group {
+                    width: 205px;
+                    margin: 0 auto;
+                    margin-bottom: 3px !important;
+                    flex-direction: column;
+                    align-items: center;
+                    label {
+                        align-self: flex-start;
+                        font-size: 14px;
+                        margin-bottom: 3px;
+                    }
+                }
+    
+    
+                .food-drink {
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 13px;
+    
+                    .form-group {
+                        width: 205px;
+                        margin-bottom: 12px !important;
+                    }
+                }
+            }
+    
+            .modal-footer {
+                padding-bottom: 30px;
+                button {
+                    height: 40px;
+                    margin: 0;
+    
+                    span {
+                        font-size: 14px;
+                    }
+                }
+    
+                .default-submit {
+                    width: 86px;
+                }
+    
+                .cancel {
+                    width: 106px;
+                    margin-left: 14px;
+                }
+            }
+        }
+       
+    }
+
+    .transport {
+        &_contact {
+            .transport-content {
+                .modal-body {
+                    .form-group {
+                        width: auto;
+                        input, textarea, .v-select {
+                            width: 240px;
+                        }
+                        &.select-arrow {
+                            height: auto;
+                        }
+                        textarea {
+                            height: 80px;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .transport-dialog {
+            width: 91%;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .transport-content {
+            padding: 20px 15px 5px 23px;
+            .modal-title {
+                text-align: center;
+            }
+        }
+
+        .modal-body {
+            .form-group {
+                width: 205px;
+                flex-direction: column;
+                align-items: center;
+                margin: 0 auto;
+                margin-bottom: 15px;
+            }
+        }
+
+        .modal-footer {
+            padding-bottom: 30px;
+            button {
+                height: 40px;
+                margin: 0;
+
+                span {
+                    font-size: 14px;
+                }
+            }
+
+            .default-submit {
+                width: 86px;
+            }
+
+            .cancel {
+                width: 106px;
+                margin-left: 14px;
+            }
+
+        }
+    }
+}

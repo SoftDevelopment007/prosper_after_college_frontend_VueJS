@@ -1,0 +1,114 @@
+@media #{$lg} {
+    .text {
+        padding-bottom: 80px;
+        &__wrapper {
+            padding: 0 15px;
+
+            .text-table {
+                padding: 22px 12px 23px 12px;
+                background-size: cover;
+            }
+        }
+    }
+}
+
+@media #{$md} {
+    .text {
+        margin-bottom: 0;
+
+        &__wrapper {
+            .roi {
+                flex-wrap: wrap;
+                .form-group {
+                    &.select-arrow {
+                        width: 100%;
+                    }
+                }
+                .result-roi {
+                    width: 100%;
+                }
+            }
+            h1 {
+                font-size: 26px;
+                margin-top: 15px;
+            }
+
+            h2 {
+                font-size: 21px;
+                margin-top: 50px;
+            }
+
+            h3 {
+                font-size: 18px;
+                margin-top: 40px;
+            }
+
+            p {
+                line-height: 26px;
+                margin-top: 25px;
+            }
+
+            .text-table {
+                padding: 18px 12px 23px 16px;
+                margin-top: 57px;
+                overflow: hidden;
+
+                .table {
+                    position: relative;
+
+                    // &::before {
+                    //     content: '';
+                    //     position: absolute;
+                    //     bottom: 0;
+                    //     right: 0;
+                    //     height: 100%;
+                    //     z-index: 1020;
+                    //     width: 30px;
+                    //     background-image: linear-gradient(to right, rgba(0, 151, 228, 0.1), rgba(0, 152, 229, 0.9));
+                    // }
+                }
+
+
+
+                .progres {
+                    display: block;
+                    margin-top: 32px;
+                }
+
+                table {
+                    display: block;
+                    overflow-x: auto;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    position: relative;
+                    border-right: none;
+
+
+
+
+                    th {
+                        min-width: 255px;
+                        line-height: 26px;
+
+                        &:last-child {
+                            border-right: 1px solid #fff;
+                        }
+                    }
+
+                    td {
+                        line-height: 26px;
+                        min-width: 255px;
+                        padding: 23px 19px 27px 31px;
+                        position: relative;
+
+                        &:last-child {
+                            border-right: 1px solid #fff;
+                        }
+
+
+                    }
+                }
+            }
+        }
+    }
+}

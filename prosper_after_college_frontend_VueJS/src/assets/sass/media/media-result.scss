@@ -1,0 +1,335 @@
+@media #{$lg} {
+    .result {
+        &__wrapper {
+            padding-top: 50px;
+            padding-bottom: 80px;
+        }
+
+        &__block {
+            margin-top: 35px;
+            padding: 40px 50px;
+
+            &-total {
+                justify-content: space-between;
+
+                span {
+                    // margin-left: 0;
+                }
+            }
+
+            &-salary.school {
+                .result__block-total {
+                    p {
+                        max-width: 260px;
+                    }
+
+                    span:last-child {}
+                }
+            }
+
+        }
+    }
+}
+
+@media #{$md} {
+    .result {
+        &__wrapper {
+            padding-top: 10px;
+        }
+
+        &__block {
+            margin-top: 20px;
+            padding: 18px 14px;
+            .total-expenses {
+                span {
+                    margin-bottom: 22px;
+                }
+            }
+            &-title {
+                h5 {
+                    font-size: 18px;
+                }
+
+                .mobile {
+                    display: block;
+                }
+            }
+
+            &-content {
+                position: relative;
+                justify-content: flex-start;
+
+                .content-name {
+                    width: 100%;
+                    align-items: flex-start;
+                    span {
+                        line-height: 34px;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                .content-price {
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    margin-left: 0;
+
+                    span {
+                        font-size: 14px;
+                        margin-bottom: 17px;
+                    }
+                }
+            }
+
+            &-total {
+                flex-wrap: wrap;
+                .result__block-group {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    p {
+                        text-align: left;
+                        width: 100%;
+                    }
+                    span {
+                        min-height: 21px;
+                        min-width: 20px;
+                    }
+                }
+                span {
+                    margin-left: 0;
+                }
+                .total {
+                    bottom: 0;
+                }
+            }
+
+            &-salary {
+                padding: 26px 20px;
+                &:nth-child(3) {
+                    .content-price {
+                        span {
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+                &.school {
+                    .result__block-total {
+                        span {
+                            margin-left: 0;
+                        }
+
+                        p {
+                            max-width: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+
+                &.expenses {
+                    .property-expenses {
+                        flex-grow: 0;
+                        position: relative;
+                    }
+
+                    .name-expenses {
+                        align-items: flex-start;
+
+                        span {
+                            margin-bottom: 20px;
+                        }
+                    }
+
+                    .price-expenses {
+                        position: absolute;
+                        left: 0;
+                        top: 26px;
+                        margin-left: 0;
+
+                        span {
+                            margin-bottom: 20px;
+                        }
+                    }
+
+                    .block-expenses {
+                        justify-content: space-between;
+                    }
+                }
+            }
+
+            &-summary {
+                p {
+                    font-size: 14px;
+                }
+
+                h5 {
+                    font-size: 14px;
+                }
+
+                span {
+                    font-size: 14px;
+                }
+            }
+
+        }
+    }
+}
+@media #{$xs} {
+    .result {
+        &__wrapper {
+            padding-top: 18px;
+            margin-bottom: 44px;
+
+            .default-title {
+                padding: 0 10px;
+            }
+        }
+
+        &__block {
+            margin-top: 18px;
+            padding: 17px 15px 35px 14px;
+
+            &-salary {
+                padding: 23px 18px 25px 21px;
+                margin-bottom: 15px;
+
+                &.school {
+                    padding-bottom: 15px;
+
+                    .result__block-total {
+                        justify-content: space-between;
+
+                        p {
+                            line-height: 17px;
+                            margin-bottom: 11px;
+                        }
+                    }
+
+                    .result__block-content {
+                        padding-right: 0;
+                    }
+
+                }
+
+                &.expenses {
+                    padding-bottom: 10px;
+                    margin-bottom: 20px;
+
+                    &::before {
+                        bottom: 81px;
+                        width: 85.5%;
+                    }
+
+                    .price-expenses {
+                        span {
+                            margin-bottom: 18px;
+
+                            &:last-child {
+                                margin-top: 33px;
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+
+                    .name-expenses {
+                        span {
+                            margin-bottom: 18px;
+
+                            &:last-child {
+                                margin-top: 32px;
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+
+                    .total-expenses {
+                        padding-top: 23px;
+
+                        span {
+                            margin-bottom: 19px;
+
+                            &:last-child {
+                                margin-top: 32px;
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-content {
+                margin-top: 9px;
+                padding-bottom: 21px;
+
+                .content-price span {
+                    margin-bottom: 19px;
+                }
+                .content-name {
+                    font-size: 14px;
+                }
+            }
+            .block-expenses {
+                .name-expenses, .price-expenses {
+                    font-size: 14px;
+                }
+               
+            }
+            &-total {
+                justify-content: flex-end;
+                margin-top: 16px;
+                span {
+                    font-size: 14px;
+                }
+                p {
+                    margin-bottom: 11px !important;
+                }
+            }
+
+            &-summary {
+                padding: 27px 22px 26px 22px;
+
+                p {
+                    line-height: 24px;
+                    text-align: center;
+
+                    &:last-child {
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+
+                span {
+                    line-height: 24px;
+                    text-align: center;
+
+                    &:first-child {
+                        margin-bottom: 12px;
+                    }
+                }
+
+                h5 {
+                    width: 100%;
+                    margin-top: 27px;
+                    padding-top: 22px;
+                    line-height: 24px;
+                    margin-bottom: 12px;
+                }
+            }
+        }
+
+        .result-mobile-text {
+            margin-top: 35px;
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+    .result {
+        .result__block-salary {
+            &:nth-child(2) {
+                .content-price {
+                   bottom: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.footer {
+    position: absolute;
+    bottom: -40px;
+    height: wsm(145);
+    min-height: wsm(145);
+    max-height: wsm(145);
+    overflow: hidden;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding-top: wsm(40);
+    }
+
+    &-bg {
+        width: wsm(1017);
+        height: wsm(1017);
+        position: absolute;
+        bottom: wsm(-875);
+        left: wsm(-144);
+    }
+    &__menu {
+        display: flex;
+        margin-left: wsm(352);
+        li {
+            margin-right: 43px;
+            z-index: 1;
+
+            a {
+                color: #ffffff !important;
+                font-size: 16px;
+                font-weight: 600;
+                letter-spacing: 0.16px;
+                text-decoration: underline !important;
+                cursor: pointer;
+            }
+
+            &:hover {
+                a {
+                    text-decoration: none;
+                    color: #515770;
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+$xs: "screen and (max-width: 479px)";
+$md: "screen and (max-width: 767px)";
+$lg: "screen and (max-width: 1199px)";
+
+
+
+@function wsm($value) {
+    @return ($value*100vw)/1920
+}
+;
+@function wxs($value) {
+    @return ($value*100vw)/320
+}
+

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Post 1",
+    "body": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>",
+    "alias": "post-1",
+    "meta": {
+      "title": "Meta title post 1",
+      "description": "Meta desc post 1"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Post 2",
+    "body": "Body 2",
+    "alias": "post-2",
+    "meta": {
+      "title": "Meta title post 2",
+      "description": "Meta desc post 2"
+    }
+  }
+]
